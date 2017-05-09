@@ -150,9 +150,7 @@ public class LicenseChecker implements ServiceConnection {
                             .bindService(
                                     new Intent(
                                             new String(
-                                                    Base64.decode("Y29tLmFuZHJvaWQudmVuZGluZy5saWNlbnNpbmcuSUxpY2Vuc2luZ1NlcnZpY2U=")))
-                                                    // https://code.google.com/p/android/issues/detail?id=78505
-                                                    .setPackage("com.android.vending"),
+                                                    Base64.decode("Y29tLmFuZHJvaWQudmVuZGluZy5saWNlbnNpbmcuSUxpY2Vuc2luZ1NlcnZpY2U="))).setPackage("com.android.vending"),
                                     this, // ServiceConnection.
                                     Context.BIND_AUTO_CREATE);
 
